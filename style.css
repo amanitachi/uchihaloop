@@ -1,0 +1,127 @@
+/* First we need to apply font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Now we set default value of body and all element */
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'poppins',sans-serif;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+/* In this section we set the logo  */
+.logonav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 10px;
+    height: 50px;
+    width: 80px;
+    border-radius: 80px;
+}
+
+/* In this section we set the nav bar  */
+li{
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: red;
+    transition: ease-in-out 0.7s;
+}
+
+
+/* Here we go we set here background color and it's length :) */
+.background{
+    background: linear-gradient(rgb(0, 0, 0),rgb(56, 8, 8));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+/* We create a container which hold text and loop image */
+.containloopandtext{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    gap: 270px;
+}
+
+/* Here we do editing with our text which we inserted */
+.text{
+    height: 100%;
+    width: 40%;
+}
+h2{
+    color:white;
+}
+p{
+    color: white;
+    font-size: 20px;
+}
+
+/* In this section we create grid and put images and it's sizes */
+.grid{
+    display: grid;
+    border: 2px white solid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-areas: "hdr hdr hdr hdr"
+                         "sec fif fif thi"
+                         "sec fif fif thi"
+                         "fou fou fou thi";
+}
+
+#box1{
+    grid-area: hdr;
+    background-image: url(./images/madara.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px white solid;
+}
+#box2{
+    grid-area: sec;
+    background-image: url(./images/obito.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px white solid;
+}
+#box3{
+    grid-area: thi;
+    background-image: url(./images/sasuke.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px white solid;
+}
+#box4{
+    grid-area: fou;
+    background-image: url(./images/itachi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px white solid;
+}
+#box5{
+    grid-area: fif;
+    background-image: url(./images/middle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+}
+
+/* Arigatto (thank you) 😀😁 */
